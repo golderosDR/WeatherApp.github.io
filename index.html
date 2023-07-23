@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="sctipt.js" defer></script>
+    <title>WeatherApp</title>
+</head>
+
+<body>
+    <div id="main" class="main">
+   
+        <div id="loc_and_today" class="loc_and_today">
+            <div id="location" class="location">
+                <p style="color: #e0e0e0;">Your location :</p>
+                <p id="city" class="city">city</p>
+                <p id="country" class="country">Land</p>
+            </div>
+
+
+            <div id="today" class="today">
+                <img id="today_img" src="./images/clouds.png" alt="clouds" class="today_img">
+                <div id="forecast_today" class="forecast_today"></div>
+
+            </div>
+
+
+        </div>
+
+        <p> </p>
+        <div id="weather_tab" class="weather_tab">
+
+            <div class="tabs">
+                <input type="radio" name="tab-btn" id="tab-btn-ur_location" value="" checked>
+                <label class="labelCurrent" id="location_label" for="tab-btn-ur_location">Your location</label>
+
+                <input type="radio" name="tab-btn" id="tab-btn-Berlin" value="">
+                <label class="label" for="tab-btn-Berlin">Berlin</label>
+
+                <input type="radio" name="tab-btn" id="tab-btn-London" value="">
+                <label class="label" for="tab-btn-London">London</label>
+
+                <input type="radio" name="tab-btn" id="tab-btn-Paris" value="">
+                <label class="label" for="tab-btn-Paris">Paris</label>
+
+                <input type="radio" name="tab-btn" id="tab-btn-Moscow" value="">
+                <label class="label" for="tab-btn-Moscow">Moscow</label>
+
+                <div id="content-ur_location" class="weather">
+                    <div class="day_current" id="current_day0">current0</div>
+                    <div class="day_current" id="current_day1">current0</div>
+                    <div class="day_current" id="current_day2">current0</div>
+                    <div class="day_current" id="current_day3">current0</div>
+                    <div class="day_current" id="current_day4">current0</div>
+                    <div class="day_current" id="current_day5">current0</div>
+                    <div class="day_current" id="current_day6">current0</div>
+                </div>
+
+                <div id="content-Berlin" class="weather">
+                    <div class="day_Berlin" id="Berlin_day0">Berlin0</div>
+                    <div class="day_Berlin" id="Berlin_day1">Berlin0</div>
+                    <div class="day_Berlin" id="Berlin_day2">Berlin0</div>
+                    <div class="day_Berlin" id="Berlin_day3">Berlin0</div>
+                    <div class="day_Berlin" id="Berlin_day4">Berlin0</div>
+                    <div class="day_Berlin" id="Berlin_day5">Berlin0</div>
+                    <div class="day_Berlin" id="Berlin_day6">Berlin0</div>
+                </div>
+                <div id="content-London" class="weather">
+                    <div class="day_London" id="London_day0">Rome0</div>
+                    <div class="day_London" id="London_day1">Rome0</div>
+                    <div class="day_London" id="London_day2">Rome0</div>
+                    <div class="day_London" id="London_day3">Rome0</div>
+                    <div class="day_London" id="London_day4">Rome0</div>
+                    <div class="day_London" id="London_day5">Rome0</div>
+                    <div class="day_London" id="London_day6">Rome0</div>
+                </div>
+                <div id="content-Paris" class="weather">
+                    <div class="day_Paris" id="Paris_day1">Paris0</div>
+                    <div class="day_Paris" id="Paris_day0">Paris0</div>
+                    <div class="day_Paris" id="Paris_day2">Paris0</div>
+                    <div class="day_Paris" id="Paris_day3">Paris0</div>
+                    <div class="day_Paris" id="Paris_day4">Paris0</div>
+                    <div class="day_Paris" id="Paris_day5">Paris0</div>
+                    <div class="day_Paris" id="Paris_day6">Paris0</div>
+                </div>
+                <div id="content-Moscow" class="weather">
+                    <div class="day_Moscow" id="Moscow_day0">Moscow0</div>
+                    <div class="day_Moscow" id="Moscow_day1">Moscow0</div>
+                    <div class="day_Moscow" id="Moscow_day2">Moscow0</div>
+                    <div class="day_Moscow" id="Moscow_day3">Moscow0</div>
+                    <div class="day_Moscow" id="Moscow_day4">Moscow0</div>
+                    <div class="day_Moscow" id="Moscow_day5">Moscow0</div>
+                    <div class="day_Moscow" id="Moscow_day6">Moscow0</div>
+                </div>
+            </div>
+
+</body>
+
+</html>
