@@ -1,0 +1,151 @@
+.main {
+  background-color: rgb(79, 117, 245);
+}
+.city {
+  color: #e0e0e0;
+  font-weight: bold;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 30px;
+}
+.country {
+  color: #e0e0e0;
+  padding-left: 15px;
+  font-size: 25px;
+}
+.location {
+  padding-left: 10px;
+  margin-top: 20px;
+  margin-left: 20px;
+  font-size: 20px;
+  width: 20%;
+  background-color: rgb(56, 100, 245);
+  border-radius: 10px 10px 10px 10px;
+}
+.location > p {
+  background-color: rgb(56, 100, 245);
+}
+
+.loc_and_today {
+  display: flex;
+  gap: 50px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: rgb(79, 117, 245);
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+}
+.today_img {
+  width: 30%;
+  margin-bottom: 10px;
+}
+.weather_tab {
+  background-color: rgb(79, 117, 245);
+  border-radius: 10px 10px 10px 10px;
+}
+.today {
+  display: flex;
+  margin-top: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: rgb(56, 100, 245);
+  width: 20%;
+  border-radius: 10px 10px 10px 10px;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+.forecast_today {
+  display: flex;
+  background-color: rgb(56, 100, 245);
+  align-items: center;
+  flex-direction: column;
+}
+.forecast_today > div {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-weight: bolder;
+  color: #e0e0e0;
+  font-size: 17px;
+  background-color: rgb(56, 100, 245);
+}
+.tabs {
+  font-size: 0;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  margin-left: auto;
+  margin-right: auto;
+  font-weight: bolder;
+}
+
+.day_current,
+.day_Berlin,
+.day_Paris,
+.day_London,
+.day_Moscow {
+  display: flex;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding-top: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 20px;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: bolder;
+  color: #e0e0e0;
+  font-size: 17px;
+  background-color: rgb(79, 117, 245);
+  width: 17%;
+  border-radius: 10px 10px 10px 10px;
+  flex-direction: column;
+  align-items: center;
+}
+.weekly_img {
+  width: 45%;
+}
+.tabs > input[type="radio"] {
+  display: none;
+}
+
+.weather {
+  background-color: rgb(56, 100, 245);
+  display: none;
+  padding: 10px 15px;
+  font-size: 16px;
+  gap: 10px;
+}
+
+#tab-btn-ur_location:checked ~ #content-ur_location,
+#tab-btn-Berlin:checked ~ #content-Berlin,
+#tab-btn-London:checked ~ #content-London,
+#tab-btn-Paris:checked ~ #content-Paris,
+#tab-btn-Moscow:checked ~ #content-Moscow {
+  display: flex;
+}
+
+.label, .labelCurrent {
+  display: inline-block;
+  border-radius: 5px 5px 0px 0px;
+  text-align: center;
+  vertical-align: middle;
+  user-select: none;
+  color: #e0e0e0;
+  text-shadow: black;
+  background-color: rgb(109, 140, 243);
+  border: 1px solid rgb(85, 125, 255);
+  padding: 2px 8px;
+  font-size: 16px;
+  line-height: 1.5;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out;
+  cursor: pointer;
+  position: relative;
+  top: 1px;
+}
+
+.tabs > label:not(:first-of-type) {
+  border-left: none;
+}
+
+.tabs > input[type="radio"]:checked + label {
+  background-color: rgb(56, 100, 245);
+}
